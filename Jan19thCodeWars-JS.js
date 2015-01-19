@@ -19,20 +19,16 @@
     // SOLUTION TO PROBLEM #2:
      
     Array.prototype.move = function (target_index, new_index) {
-      if (target_index >= this.length) return 'no target' // get the size verified to be within bounds
-      var arrayCopy = this.concat() //concatenate the array into an array named 'a'
-      var splicedIndex = arrayCopy.splice(target_index, 1)[0] //take copied array and splice it given the target index
-     
-      //now based on new_index length in comparison to copy
-      if (new_index> arrayCopy.length) {
-        arrayCopy[new_index] = e //add it if new index is >
-      } else {
-        arrayCopy.splice(new_index, 0, splicedIndex) //otherwise 								splice it
-      }
-     
-      return arrayCopy //return the copy
-    }
-     
+    	if (target_index >= this.length) { return "no target"; } //check the bounds
+   
+    	var tmp = this.slice(); //copy the array form dot function of (this) to get a copy of it to temp
+    	var elem = String(tmp.splice(target_index, 1)); //Use temp to modify and splice given target index
+  
+    	(new_index >= this.length) ? tmp[new_index] = elem : tmp.splice(new_index, 0, elem); //ternary operator (a>b)?true:false
+  
+    	return tmp;//return the ahrray back
+    };
+ 
     // SOME EXTRA TESTING
      
     var ArrayTest = ['a', 'b', 'e']
