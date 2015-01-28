@@ -16,3 +16,11 @@ Array.isArray = function(value) { //making a dot function, named isArray, with i
     return false;  //otherwise it has to be false, not an array. 
   }
 };
+
+//below is an extra solution
+// This function should define if value is Array
+Array.isArray = function(value) {
+  return Object.prototype.toString.call(value) === '[object Array]';
+};
+
+//basic one line solution doing what i did, since return will auto give a boolean of true or false, identical func, one less line.
