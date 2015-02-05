@@ -47,19 +47,4 @@ Contact me:
 
   #3: Skype: Shaheeng1
 
-Feel free to email me calling me a lazy if I dont push a minimum of 1 contribution to each of these repos everyday. 
-
-
-[ / / Goal -> 1 Months -> Not a single missed day ]
-
-
-[ / / Goal -> 2 Months -> Not a single missed day ]
-
-
-[ / / Goal -> 3 Months -> Not a single missed day ]
-
-
-[ / / Goal -> 4 Months -> Not a single missed day ]
-
-
-Thank you CodeWars, and have a good day!
+Feel free to email me calling me a lazy if I dont push good amount of contributions before the summer!
